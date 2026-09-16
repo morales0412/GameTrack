@@ -24,7 +24,7 @@ class Game(models.Model):
         ("OTHER", "Otro"),
     ]
     nombre = models.CharField(max_length=100, unique=True, blank=False, null=False)
-    descripcion = models.TextField(blank=True, null=True)
+    descripcion = models.TextField(blank=True)
     genero = models.CharField(
         max_length=20, choices=generos_opciones, blank=False, null=False
     )
